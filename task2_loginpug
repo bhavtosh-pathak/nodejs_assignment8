@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title Simple Login Page
+  link(rel="stylesheet", href="/assets/style.css")
+  body
+    .login-container
+      h2 Login
+      form#loginForm(method="post", action="/submit")
+        label Username:
+        input#email(type="email", name="email", required)
+        label Password:
+        input#password(type="password", name="password")
+        input(type="submit", value="submit")
